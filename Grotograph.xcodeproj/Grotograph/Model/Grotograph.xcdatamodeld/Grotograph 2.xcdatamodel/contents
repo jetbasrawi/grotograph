@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="872" systemVersion="11C74" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Photo" representedClassName="Photo">
+        <attribute name="dateCreated" optional="YES" attributeType="Date"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uuid" optional="YES" attributeType="String"/>
+        <relationship name="session" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Session" inverseName="keyFrame" inverseEntity="Session"/>
+    </entity>
+    <entity name="Project" representedClassName="Project">
+        <attribute name="dateCreated" optional="YES" attributeType="Date"/>
+        <attribute name="dateModified" optional="YES" attributeType="Date"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="sessions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Session" inverseName="project" inverseEntity="Session"/>
+        <fetchedProperty name="currentSession" optional="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" predicateString="dateCompleted == $FETCHED_PROPERTY.userInfo.notSetValue"/>
+            <userInfo>
+                <entry key="notSetValue" value="nil"/>
+            </userInfo>
+        </fetchedProperty>
+    </entity>
+    <entity name="Session" representedClassName="Session">
+        <attribute name="date" optional="YES" attributeType="Date"/>
+        <attribute name="dateKey" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String"/>
+        <relationship name="keyFrame" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Photo" inverseName="session" inverseEntity="Photo" syncable="YES"/>
+        <relationship name="photos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Photo" inverseName="session" inverseEntity="Photo"/>
+        <relationship name="project" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Project" inverseName="sessions" inverseEntity="Project"/>
+    </entity>
+    <elements>
+        <element name="Photo" positionX="234" positionY="213" width="128" height="105"/>
+        <element name="Project" positionX="-135" positionY="234" width="128" height="90"/>
+        <element name="Session" positionX="90" positionY="45" width="128" height="135"/>
+    </elements>
+</model>

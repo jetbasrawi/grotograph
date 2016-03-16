@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:Grotograph"
+      name = "Grotograph">
+      <FileRef
+         location = "group:Asset.h">
+      </FileRef>
+      <FileRef
+         location = "group:AssetGroup.m">
+      </FileRef>
+      <FileRef
+         location = "group:CameraOverlayViewControllerDelegate.h">
+      </FileRef>
+      <Group
+         location = "group:Categories"
+         name = "Categories">
+         <FileRef
+            location = "group:NSArray-Set.h">
+         </FileRef>
+         <FileRef
+            location = "group:NSArray-Set.m">
+         </FileRef>
+         <FileRef
+            location = "group:NSDate+Utils.h">
+         </FileRef>
+         <FileRef
+            location = "group:NSDate+Utils.m">
+         </FileRef>
+         <FileRef
+            location = "group:NSManagedObject-insert.h">
+         </FileRef>
+         <FileRef
+            location = "group:NSManagedObject-insert.m">
+         </FileRef>
+         <FileRef
+            location = "group:NSManagedObject-IsNew.h">
+         </FileRef>
+         <FileRef
+            location = "group:NSManagedObject-IsNew.m">
+         </FileRef>
+         <FileRef
+            location = "group:Project+Queries.h">
+         </FileRef>
+         <FileRef
+            location = "group:Project+Queries.m">
+         </FileRef>
+         <FileRef
+            location = "group:Session+Queries.h">
+         </FileRef>
+         <FileRef
+            location = "group:Session+Queries.m">
+         </FileRef>
+         <FileRef
+            location = "group:UIImage+Decompress.h">
+         </FileRef>
+         <FileRef
+            location = "group:UIImage+Decompress.m">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Domain"
+         name = "Domain">
+         <Group
+            location = "group:Model"
+            name = "Model">
+            <Group
+               location = "group:Entities"
+               name = "Entities">
+            </Group>
+            <FileRef
+               location = "group:Grotograph.xcdatamodeld">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Service"
+            name = "Service">
+         </Group>
+      </Group>
+      <Group
+         location = "group:en.lproj"
+         name = "en.lproj">
+         <FileRef
+            location = "group:InfoPlist.strings">
+         </FileRef>
+         <FileRef
+            location = "group:MainWindow.xib">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:ExifDataExtractor.h"
+         name = "ExifDataExtractor.h">
+      </Group>
+      <Group
+         location = "group:ExifDataExtractor.m"
+         name = "ExifDataExtractor.m">
+      </Group>
+      <Group
+         location = "group:FileSaver.h"
+         name = "FileSaver.h">
+      </Group>
+      <Group
+         location = "group:FileSaver.m"
+         name = "FileSaver.m">
+      </Group>
+      <FileRef
+         location = "group:Grotograph-Info.plist">
+      </FileRef>
+      <FileRef
+         location = "group:Grotograph-Prefix.pch">
+      </FileRef>
+      <FileRef
+         location = "group:GrotographAppDelegate.h">
+      </FileRef>
+      <FileRef
+         location = "group:GrotographAppDelegate.m">
+      </FileRef>
+      <Group
+         location = "group:GrotographTests"
+         name = "GrotographTests">
+         <Group
+            location = "group:en.lproj"
+            name = "en.lproj">
+            <FileRef
+               location = "group:InfoPlist.strings">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:GrotographTests-Info.plist">
+         </FileRef>
+         <FileRef
+            location = "group:GrotographTests.h">
+         </FileRef>
+         <FileRef
+            location = "group:GrotographTests.m">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:GTGAlbumPickerController.h">
+      </FileRef>
+      <FileRef
+         location = "group:GTGAlbumPickerController.m">
+      </FileRef>
+      <FileRef
+         location = "group:GTGAssetLibraryManager.h">
+      </FileRef>
+      <FileRef
+         location = "group:GTGAssetLibraryManager.m">
+      </FileRef>
+      <FileRef
+         location = "group:GTGAssetPickerThumbTableView.h">
+      </FileRef>
+      <FileRef
+         location = "group:GTGImagePickerThumbnail.h">
+      </FileRef>
+      <FileRef
+         location = "group:IDateUtility.h">
+      </FileRef>
+      <FileRef
+         location = "group:ImageUtils.h">
+      </FileRef>
+      <FileRef
+         location = "group:ImageUtils.m">
+      </FileRef>
+      <FileRef
+         location = "group:ImportImagesView.h">
+      </FileRef>
+      <FileRef
+         location = "group:ImportImagesView.m">
+      </FileRef>
+      <FileRef
+         location = "group:ImportingStatusView.h">
+      </FileRef>
+      <FileRef
+         location = "group:ImportingStatusView.m">
+      </FileRef>
+      <FileRef
+         location = "group:ImportingStatusView.xib">
+      </FileRef>
+      <FileRef
+         location = "group:KeyFrameSelectionScrollItemView.h">
+      </FileRef>
+      <FileRef
+         location = "group:KeyFrameSelectionScrollItemView.m">
+      </FileRef>
+      <FileRef
+         location = "group:KeyFrameSelectionScrollViewItemView.xib">
+      </FileRef>
+      <FileRef
+         location = "group:KeyFrameSelectionView.h">
+      </FileRef>
+      <FileRef
+         location = "group:KeyFrameSelectionView.m">
+      </FileRef>
+      <FileRef
+         location = "group:KeyFrameSelectionView.xib">
+      </FileRef>
+      <FileRef
+         location = "group:Localizable.strings">
+      </FileRef>
+      <FileRef
+         location = "group:main.m">
+      </FileRef>
+      <Group
+         location = "group:Model"
+         name = "Model">
+         <Group
+            location = "group:Entities"
+            name = "Entities">
+            <FileRef
+               location = "group:GTGAsset.h">
+            </FileRef>
+            <FileRef
+               location = "group:GTGAsset.m">
+            </FileRef>
+            <FileRef
+               location = "group:GTGAssetsGroup.h">
+            </FileRef>
+            <FileRef
+               location = "group:GTGAssetsGroup.m">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:Grotograph.xcdatamodeld">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:NoSessionsView.h">
+      </FileRef>
+      <FileRef
+         location = "group:NoSessionsView.m">
+      </FileRef>
+      <FileRef
+         location = "group:Photo.h">
+      </FileRef>
+      <FileRef
+         location = "group:Photo.m">
+      </FileRef>
+      <FileRef
+         location = "group:PhotoHelper.h">
+      </FileRef>
+      <FileRef
+         location = "group:PhotoHelper.m">
+      </FileRef>
+      <Group
+         location = "group:Resources"
+         name = "Resources">
+         <FileRef
+            location = "group:default.png">
+         </FileRef>
+         <FileRef
+            location = "group:emptyprojectimage.png">
+         </FileRef>
+         <FileRef
+            location = "group:Icon-72.png">
+         </FileRef>
+         <FileRef
+            location = "group:Icon.png">
+         </FileRef>
+         <FileRef
+            location = "group:Icon@2x.png">
+         </FileRef>
+         <FileRef
+            location = "group:iTunesArtwork">
+         </FileRef>
+         <FileRef
+            location = "group:tableviewthumbdefault.png">
+         </FileRef>
+         <FileRef
+            location = "group:textfieldbackground.png">
+         </FileRef>
+         <FileRef
+            location = "group:UIBarButtonItemArrowLeft.png">
+         </FileRef>
+         <FileRef
+            location = "group:UIBarButtonItemArrowLeft@2x.png">
+         </FileRef>
+         <FileRef
+            location = "group:UIBarButtonItemArrowRight.png">
+         </FileRef>
+         <FileRef
+            location = "group:UIBarButtonItemArrowRight@2x.png">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:scripts"
+         name = "scripts">
+         <Group
+            location = "group:mogenScripts"
+            name = "mogenScripts">
+            <FileRef
+               location = "group:mogen.sh">
+            </FileRef>
+            <FileRef
+               location = "group:mogend.sh">
+            </FileRef>
+         </Group>
+      </Group>
+      <FileRef
+         location = "group:SessionHelper.h">
+      </FileRef>
+      <FileRef
+         location = "group:SessionHelper.m">
+      </FileRef>
+      <Group
+         location = "group:SessionPhotoBrowser"
+         name = "SessionPhotoBrowser">
+         <FileRef
+            location = "group:GTGPhoto.h">
+         </FileRef>
+         <FileRef
+            location = "group:GTGPhoto.m">
+         </FileRef>
+         <FileRef
+            location = "group:SessionPhotoBrowser.h">
+         </FileRef>
+         <FileRef
+            location = "group:SessionPhotoBrowser.m">
+         </FileRef>
+         <FileRef
+            location = "group:ZoomingScrollView.h">
+         </FileRef>
+         <FileRef
+            location = "group:ZoomingScrollView.m">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Subclasses"
+         name = "Subclasses">
+         <FileRef
+            location = "group:UIImageViewTap.h">
+         </FileRef>
+         <FileRef
+            location = "group:UIImageViewTap.m">
+         </FileRef>
+         <FileRef
+            location = "group:UIViewTap.h">
+         </FileRef>
+         <FileRef
+            location = "group:UIViewTap.m">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Views"
+         name = "Views">
+         <Group
+            location = "group:Asset Importer"
+            name = "Asset Importer">
+            <FileRef
+               location = "group:GTGAssetsGroupTableViewController.h">
+            </FileRef>
+            <FileRef
+               location = "group:GTGAssetsGroupTableViewController.m">
+            </FileRef>
+            <FileRef
+               location = "group:GTGAssetTableViewCell.h">
+            </FileRef>
+            <FileRef
+               location = "group:GTGAssetTableViewCell.m">
+            </FileRef>
+            <FileRef
+               location = "group:GTGAssetTableViewController.h">
+            </FileRef>
+            <FileRef
+               location = "group:GTGAssetTableViewController.m">
+            </FileRef>
+            <FileRef
+               location = "group:GTGAssetThumbnailView.h">
+            </FileRef>
+            <FileRef
+               location = "group:GTGAssetThumbnailView.m">
+            </FileRef>
+            <FileRef
+               location = "group:ImportAssetsViewController.h">
+            </FileRef>
+            <FileRef
+               location = "group:ImportAssetsViewController.m">
+            </FileRef>
+            <Group
+               location = "group:Resources"
+               name = "Resources">
+               <FileRef
+                  location = "group:GTGAlbumListController.xib">
+               </FileRef>
+               <FileRef
+                  location = "group:GTGAssetPickerThumbTableView.xib">
+               </FileRef>
+               <FileRef
+                  location = "group:Overlay.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Overlay@2x.png">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:ScanLibrariesViewController.h">
+            </FileRef>
+            <FileRef
+               location = "group:ScanLibrariesViewController.m">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Camera Overlay"
+            name = "Camera Overlay">
+            <FileRef
+               location = "group:CameraOverlayView.h">
+            </FileRef>
+            <FileRef
+               location = "group:CameraOverlayView.m">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Progress Hud"
+            name = "Progress Hud">
+            <FileRef
+               location = "group:MBProgressHUD.h">
+            </FileRef>
+            <FileRef
+               location = "group:MBProgressHUD.m">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Project List"
+            name = "Project List">
+            <FileRef
+               location = "group:ProjectListView.h">
+            </FileRef>
+            <FileRef
+               location = "group:ProjectListView.m">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Session Browser"
+            name = "Session Browser">
+            <FileRef
+               location = "group:ActionRequiredView.h">
+            </FileRef>
+            <FileRef
+               location = "group:ActionRequiredView.m">
+            </FileRef>
+            <FileRef
+               location = "group:ChooseKeyframeViewController.h">
+            </FileRef>
+            <FileRef
+               location = "group:ChooseKeyframeViewController.m">
+            </FileRef>
+            <FileRef
+               location = "group:SessionBrowserPageView.h">
+            </FileRef>
+            <FileRef
+               location = "group:SessionBrowserPageView.m">
+            </FileRef>
+            <FileRef
+               location = "group:SessionBrowserViewController.h">
+            </FileRef>
+            <FileRef
+               location = "group:SessionBrowserViewController.m">
+            </FileRef>
+            <FileRef
+               location = "group:SessionInfoOverlayViewController.h">
+            </FileRef>
+            <FileRef
+               location = "group:SessionInfoOverlayViewController.m">
+            </FileRef>
+            <FileRef
+               location = "group:SessionInfoOverlayViewController.xib">
+            </FileRef>
+            <FileRef
+               location = "group:ZoomingAssetView.h">
+            </FileRef>
+            <FileRef
+               location = "group:ZoomingAssetView.m">
+            </FileRef>
+         </Group>
+      </Group>
+   </Group>
+</Workspace>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="872" systemVersion="11C74" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Asset" representedClassName="Photo">
+        <attribute name="dateCreated" optional="YES" attributeType="Date"/>
+        <attribute name="dateImported" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="source" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uuid" optional="YES" attributeType="String"/>
+        <relationship name="assetGroups" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="AssetGroup" inverseName="assets" inverseEntity="AssetGroup" syncable="YES"/>
+        <relationship name="comments" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Comment" syncable="YES"/>
+        <relationship name="session" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Session" inverseName="keyFrame" inverseEntity="Session"/>
+        <relationship name="transformation" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="AssetTransformation" inverseName="asset" inverseEntity="AssetTransformation" syncable="YES"/>
+    </entity>
+    <entity name="AssetGroup" representedClassName="AssetGroup" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="persistentId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="assets" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Asset" inverseName="assetGroups" inverseEntity="Asset" syncable="YES"/>
+    </entity>
+    <entity name="AssetTransformation" representedClassName="AssetTransformation" syncable="YES">
+        <attribute name="offset_x" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="offset_y" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="rotation" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="zoomscale" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="asset" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Asset" inverseName="transformation" inverseEntity="Asset" syncable="YES"/>
+    </entity>
+    <entity name="Comment" representedClassName="Comment" syncable="YES"/>
+    <entity name="Project" representedClassName="Project">
+        <attribute name="dateCreated" optional="YES" attributeType="Date" indexed="YES"/>
+        <attribute name="dateModified" optional="YES" attributeType="Date"/>
+        <attribute name="name" optional="YES" attributeType="String" indexed="YES"/>
+        <relationship name="sessions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Session" inverseName="project" inverseEntity="Session"/>
+        <fetchedProperty name="mostRecentSession" optional="YES" syncable="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="Project" predicateString="dateCreated == Session.@max.dateCreated"/>
+        </fetchedProperty>
+    </entity>
+    <entity name="Session" representedClassName="Session">
+        <attribute name="date" optional="YES" attributeType="Date"/>
+        <attribute name="dateKey" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String"/>
+        <relationship name="assets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Asset" inverseName="session" inverseEntity="Asset"/>
+        <relationship name="keyFrame" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Asset" inverseName="session" inverseEntity="Asset" syncable="YES"/>
+        <relationship name="project" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Project" inverseName="sessions" inverseEntity="Project"/>
+    </entity>
+    <elements>
+        <element name="Asset" positionX="198" positionY="-9" width="128" height="180"/>
+        <element name="AssetGroup" positionX="-36" positionY="198" width="128" height="120"/>
+        <element name="AssetTransformation" positionX="72" positionY="276" width="128" height="120"/>
+        <element name="Comment" positionX="232" positionY="324" width="128" height="45"/>
+        <element name="Project" positionX="-135" positionY="234" width="128" height="134"/>
+        <element name="Session" positionX="90" positionY="45" width="128" height="135"/>
+    </elements>
+</model>
